@@ -1,0 +1,17 @@
+{
+    "data": [{
+             "id":"42879",
+             "live_browse":"20000人在看",
+             "live_type":"1",
+             "live_title":"标题标题标题沙发电视",
+             "live_time":"07月25日 17:07",
+             },{
+             "id":"42879",
+             "live_browse":"20000人在看",
+             "live_type":"2",
+             "live_title":"标题标题标题沙发电视",
+             "live_time":"07月25日 17:07",
+             },],
+    "code": 0,
+    "msg": "成功"
+}

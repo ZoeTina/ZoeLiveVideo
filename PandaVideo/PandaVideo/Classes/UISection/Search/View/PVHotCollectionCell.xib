@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="resuPVHotCollectionCell" id="gTV-IL-0wX" customClass="PVHotCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="323" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="323" height="59"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufQ-8d-jWV">
+                        <rect key="frame" x="15" y="23" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ufQ-8d-jWV" secondAttribute="height" id="FAp-W5-21z"/>
+                            <constraint firstAttribute="width" constant="14" id="YNH-Qp-Xmd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关键词" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUX-5L-Ofc">
+                        <rect key="frame" x="39" y="21" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW5-bv-itB">
+                        <rect key="frame" x="95" y="29.5" width="0.0" height="0.0"/>
+                        <color key="backgroundColor" red="0.98431372549019602" green="0.54509803921568623" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hW5-bv-itB" firstAttribute="leading" secondItem="fUX-5L-Ofc" secondAttribute="trailing" constant="10" id="J81-Ws-kcf"/>
+                <constraint firstItem="fUX-5L-Ofc" firstAttribute="leading" secondItem="ufQ-8d-jWV" secondAttribute="trailing" constant="10" id="ePS-gM-dZJ"/>
+                <constraint firstItem="fUX-5L-Ofc" firstAttribute="centerY" secondItem="ufQ-8d-jWV" secondAttribute="centerY" id="h0z-8K-d3Y"/>
+                <constraint firstItem="ufQ-8d-jWV" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="iRW-iv-vRk"/>
+                <constraint firstItem="hW5-bv-itB" firstAttribute="centerY" secondItem="fUX-5L-Ofc" secondAttribute="centerY" id="qX1-gP-MPU"/>
+                <constraint firstItem="ufQ-8d-jWV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="zkj-ce-b81"/>
+            </constraints>
+            <size key="customSize" width="323" height="65"/>
+            <connections>
+                <outlet property="isHotLabel" destination="hW5-bv-itB" id="EGp-dr-Q8K"/>
+                <outlet property="numberLabel" destination="ufQ-8d-jWV" id="BOT-0u-gJW"/>
+                <outlet property="titleHotLabel" destination="fUX-5L-Ofc" id="LTk-hV-xwp"/>
+            </connections>
+            <point key="canvasLocation" x="-231" y="155"/>
+        </collectionViewCell>
+    </objects>
+</document>

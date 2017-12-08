@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="resuPVDemandTableFootView" id="iN0-l3-epB" customClass="PVDemandTableFootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="查看更多" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcm-fP-lya">
+                    <rect key="frame" x="153" y="23" width="53.5" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.0" green="0.71372549019607845" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home2_btn_enter_blue" translatesAutoresizingMaskIntoConstraints="NO" id="jEY-de-zi4">
+                    <rect key="frame" x="196.5" y="0.0" width="40" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="I0z-VH-YRZ"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="jEY-de-zi4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ETl-ea-R6h"/>
+                <constraint firstItem="jEY-de-zi4" firstAttribute="leading" secondItem="Hcm-fP-lya" secondAttribute="trailing" constant="-10" id="KIM-nh-j05"/>
+                <constraint firstItem="Hcm-fP-lya" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="c4O-bY-wXh"/>
+                <constraint firstItem="Hcm-fP-lya" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-8" id="wUx-Me-UJd"/>
+                <constraint firstAttribute="bottom" secondItem="jEY-de-zi4" secondAttribute="bottom" id="zBi-M4-teh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="moreImageView" destination="jEY-de-zi4" id="1fL-8A-05y"/>
+                <outlet property="moreLabel" destination="Hcm-fP-lya" id="12e-dG-Pge"/>
+            </connections>
+            <point key="canvasLocation" x="-260.5" y="-95"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home2_btn_enter_blue" width="5" height="10"/>
+    </resources>
+</document>

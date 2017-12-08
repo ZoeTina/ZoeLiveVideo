@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="resuPVDetailHelpsTextFootView" id="iN0-l3-epB" customClass="PVDetailHelpsTextFootView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="58"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iim-0i-DQl">
+                    <rect key="frame" x="310" y="22" width="55" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="无用(51)" image="mine_btn_useless_normal">
+                        <color key="titleColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="mine_btn_useless_selected1"/>
+                    <connections>
+                        <action selector="unlessUserfulBtnClicked" destination="iN0-l3-epB" eventType="touchUpInside" id="9r4-FH-9S8"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgz-Oe-3UT">
+                    <rect key="frame" x="304" y="22" width="1" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="gKv-jD-kRq"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfC-pV-Haq">
+                    <rect key="frame" x="244" y="22" width="55" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="有用(51)" image="mine_btn_useful_normal">
+                        <color key="titleColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="mine_btn_useless_selected"/>
+                    <connections>
+                        <action selector="userfulBtnClicked" destination="iN0-l3-epB" eventType="touchUpInside" id="HvZ-09-3Wo"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Efl-9m-yQK">
+                    <rect key="frame" x="0.0" y="57" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Epj-kD-gUR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Iim-0i-DQl" firstAttribute="top" secondItem="kgz-Oe-3UT" secondAttribute="top" id="1k5-KF-qS3"/>
+                <constraint firstItem="Iim-0i-DQl" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="2PP-AO-HuU"/>
+                <constraint firstItem="Iim-0i-DQl" firstAttribute="centerY" secondItem="IfC-pV-Haq" secondAttribute="centerY" id="7VF-fb-KBR"/>
+                <constraint firstItem="Iim-0i-DQl" firstAttribute="leading" secondItem="kgz-Oe-3UT" secondAttribute="trailing" constant="5" id="7qN-MM-qKa"/>
+                <constraint firstItem="kgz-Oe-3UT" firstAttribute="leading" secondItem="IfC-pV-Haq" secondAttribute="trailing" constant="5" id="AvJ-lh-dRs"/>
+                <constraint firstAttribute="trailing" secondItem="Iim-0i-DQl" secondAttribute="trailing" constant="10" id="ERW-Bk-0IV"/>
+                <constraint firstItem="Iim-0i-DQl" firstAttribute="bottom" secondItem="kgz-Oe-3UT" secondAttribute="bottom" id="R46-Ew-Y9J"/>
+                <constraint firstItem="Efl-9m-yQK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aBg-Yc-akD"/>
+                <constraint firstAttribute="trailing" secondItem="Efl-9m-yQK" secondAttribute="trailing" id="dXP-mY-AdF"/>
+                <constraint firstAttribute="bottom" secondItem="Efl-9m-yQK" secondAttribute="bottom" id="jM0-54-VYj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="unlessUserfulBtn" destination="Iim-0i-DQl" id="mks-jH-XmQ"/>
+                <outlet property="userfulBtn" destination="IfC-pV-Haq" id="wya-zS-S2K"/>
+            </connections>
+            <point key="canvasLocation" x="-129.5" y="-400"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_btn_useful_normal" width="12" height="12"/>
+        <image name="mine_btn_useless_normal" width="12" height="12"/>
+        <image name="mine_btn_useless_selected" width="12" height="12"/>
+        <image name="mine_btn_useless_selected1" width="12" height="12"/>
+    </resources>
+</document>

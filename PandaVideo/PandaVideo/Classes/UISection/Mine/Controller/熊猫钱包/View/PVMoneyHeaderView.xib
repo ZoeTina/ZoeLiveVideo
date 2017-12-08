@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="resuPVMoneyHeaderView" id="iN0-l3-epB" customClass="PVMoneyHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_icon_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="HkT-LB-1kV">
+                    <rect key="frame" x="13" y="31.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HkT-LB-1kV" secondAttribute="height" id="FRw-ng-nqP"/>
+                        <constraint firstAttribute="width" constant="50" id="K7E-6m-745"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的余额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgg-Wb-0UW">
+                    <rect key="frame" x="73" y="37.5" width="61.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rB5-al-kru">
+                    <rect key="frame" x="73" y="61.5" width="9" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.99607843137254903" green="0.65490196078431373" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_icon_money_small" translatesAutoresizingMaskIntoConstraints="NO" id="VeJ-9U-7gI">
+                    <rect key="frame" x="85" y="62" width="16" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="NdX-C6-o3W"/>
+                        <constraint firstAttribute="width" constant="16" id="WLT-ac-iyq"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="HkT-LB-1kV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="8WQ-J4-mAw"/>
+                <constraint firstItem="rB5-al-kru" firstAttribute="top" secondItem="Fgg-Wb-0UW" secondAttribute="bottom" constant="6" id="BqB-Oc-is7"/>
+                <constraint firstItem="VeJ-9U-7gI" firstAttribute="leading" secondItem="rB5-al-kru" secondAttribute="trailing" constant="3" id="ICH-VG-l6h"/>
+                <constraint firstItem="Fgg-Wb-0UW" firstAttribute="leading" secondItem="HkT-LB-1kV" secondAttribute="trailing" constant="10" id="VAU-eA-yte"/>
+                <constraint firstItem="Fgg-Wb-0UW" firstAttribute="centerY" secondItem="HkT-LB-1kV" secondAttribute="centerY" constant="-10" id="ZCI-g9-n2x"/>
+                <constraint firstItem="VeJ-9U-7gI" firstAttribute="centerY" secondItem="rB5-al-kru" secondAttribute="centerY" id="hOp-J2-i3E"/>
+                <constraint firstItem="HkT-LB-1kV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="oCj-mZ-3gl"/>
+                <constraint firstItem="rB5-al-kru" firstAttribute="leading" secondItem="Fgg-Wb-0UW" secondAttribute="leading" id="qaI-GB-Ehs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="HkT-LB-1kV" id="Y1p-U1-7Uv"/>
+                <outlet property="moneyLabel" destination="rB5-al-kru" id="43w-Bz-27J"/>
+            </connections>
+            <point key="canvasLocation" x="-49.5" y="-331.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_icon_avatar" width="50" height="50"/>
+        <image name="mine_icon_money_small" width="14" height="14"/>
+    </resources>
+</document>

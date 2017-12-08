@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PVVideoTipsView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HVh-2x-VEw">
+                    <rect key="frame" x="0.0" y="13" width="375" height="47"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨小贴士：视频不超过2333M，是极好的哦~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jon-dR-kbo">
+                            <rect key="frame" x="39" y="15.5" width="298" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.70196078431372544" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Jon-dR-kbo" firstAttribute="centerY" secondItem="HVh-2x-VEw" secondAttribute="centerY" id="BE7-8v-K3u"/>
+                        <constraint firstAttribute="height" constant="47" id="DcR-o8-yTB"/>
+                        <constraint firstItem="Jon-dR-kbo" firstAttribute="centerX" secondItem="HVh-2x-VEw" secondAttribute="centerX" id="X8p-BC-EhL"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_ugc_prompt" translatesAutoresizingMaskIntoConstraints="NO" id="drg-MF-Ct4">
+                    <rect key="frame" x="6" y="0.0" width="36" height="47"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="6Th-mZ-89c"/>
+                        <constraint firstAttribute="height" constant="47" id="zip-b4-u55"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="drg-MF-Ct4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4xV-Y8-846"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HVh-2x-VEw" secondAttribute="trailing" id="Nvk-Lk-RAA"/>
+                <constraint firstItem="HVh-2x-VEw" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="hED-GY-tsb"/>
+                <constraint firstItem="HVh-2x-VEw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="iVy-ue-Bgo"/>
+                <constraint firstItem="drg-MF-Ct4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="6" id="vUM-LI-Z4M"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="tipsLabel" destination="Jon-dR-kbo" id="lML-BH-le1"/>
+            </connections>
+            <point key="canvasLocation" x="-395" y="-38"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_ugc_prompt" width="36" height="46"/>
+    </resources>
+</document>

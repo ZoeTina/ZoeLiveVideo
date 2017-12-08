@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PVUGCBeginUploadViewController">
+            <connections>
+                <outlet property="backHomeButton" destination="ZCD-Ay-riy" id="kZk-Vi-tsi"/>
+                <outlet property="lookUploadProgressButton" destination="KBm-W8-Eoh" id="6f7-sU-YKH"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chahua" translatesAutoresizingMaskIntoConstraints="NO" id="E7N-uZ-n3Y">
+                    <rect key="frame" x="20" y="119" width="335" height="303"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视频已经开始上传了哦～" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IgE-GP-BbO">
+                    <rect key="frame" x="103.5" y="60" width="168.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可至&quot;我的-我的视频&quot;查看状态" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcQ-jT-3Cy">
+                    <rect key="frame" x="106" y="95" width="163.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传成功后即完成报名。你的视频会进入" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5d-6a-Nyi">
+                    <rect key="frame" x="77" y="442" width="221" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="审核阶段，请耐心等待" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8pF-Hu-FqE">
+                    <rect key="frame" x="126" y="476.5" width="123" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCD-Ay-riy">
+                    <rect key="frame" x="123.5" y="531" width="128" height="40"/>
+                    <state key="normal" title="返回活动首页">
+                        <color key="titleColor" red="0.85490196078431369" green="0.34901960784313724" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backUGCHomeButtonClick:" destination="-1" eventType="touchUpInside" id="TL5-l6-nSL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KBm-W8-Eoh">
+                    <rect key="frame" x="123.5" y="591.5" width="128" height="40.5"/>
+                    <state key="normal" title="查看视频进度">
+                        <color key="titleColor" red="0.85490196080000003" green="0.34901960780000002" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="lookUploadProgressButtonClick:" destination="-1" eventType="touchUpInside" id="irC-ha-KKC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f5d-6a-Nyi" firstAttribute="top" secondItem="E7N-uZ-n3Y" secondAttribute="bottom" multiplier="441:421" id="440-bb-ucp"/>
+                <constraint firstItem="ZCD-Ay-riy" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="40:667" id="5dH-Oc-2Pe"/>
+                <constraint firstItem="8pF-Hu-FqE" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="6oJ-aU-yQs"/>
+                <constraint firstItem="KBm-W8-Eoh" firstAttribute="height" secondItem="ZCD-Ay-riy" secondAttribute="height" id="Kni-da-bGa"/>
+                <constraint firstItem="ZCD-Ay-riy" firstAttribute="top" secondItem="8pF-Hu-FqE" secondAttribute="bottom" multiplier="529:489" id="L7t-zR-tF5"/>
+                <constraint firstItem="IgE-GP-BbO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="60:667" id="LtO-Hg-mXz"/>
+                <constraint firstItem="E7N-uZ-n3Y" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="NBr-Ev-Y2b"/>
+                <constraint firstItem="ZCD-Ay-riy" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="VWi-tJ-tdg"/>
+                <constraint firstItem="KBm-W8-Eoh" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="WUA-hO-2gD"/>
+                <constraint firstItem="8pF-Hu-FqE" firstAttribute="top" secondItem="f5d-6a-Nyi" secondAttribute="bottom" multiplier="475:455" id="Yox-b1-qFy"/>
+                <constraint firstItem="KBm-W8-Eoh" firstAttribute="width" secondItem="ZCD-Ay-riy" secondAttribute="width" id="Z00-Xs-ETf"/>
+                <constraint firstItem="E7N-uZ-n3Y" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="119:667" id="cIc-ge-FR0"/>
+                <constraint firstItem="IcQ-jT-3Cy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="95:667" id="d0v-TJ-6vW"/>
+                <constraint firstItem="IcQ-jT-3Cy" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="g0W-p2-Mnb"/>
+                <constraint firstItem="f5d-6a-Nyi" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="mDu-Wb-vef"/>
+                <constraint firstItem="KBm-W8-Eoh" firstAttribute="top" secondItem="ZCD-Ay-riy" secondAttribute="bottom" multiplier="580:560" id="ncl-me-6jr"/>
+                <constraint firstItem="E7N-uZ-n3Y" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="335:375" id="qrV-7B-Ic8"/>
+                <constraint firstItem="E7N-uZ-n3Y" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="303:667" id="t5t-UR-1BB"/>
+                <constraint firstItem="ZCD-Ay-riy" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="128:375" id="tdT-q0-bIh"/>
+                <constraint firstItem="IgE-GP-BbO" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="z7b-Kt-r2V"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chahua" width="353" height="302"/>
+    </resources>
+</document>

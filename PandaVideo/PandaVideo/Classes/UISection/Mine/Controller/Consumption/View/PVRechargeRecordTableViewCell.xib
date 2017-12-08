@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PVRechargeRecordTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Esm-bs-nmi">
+                        <rect key="frame" x="13" y="18" width="7" height="7"/>
+                        <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="7" id="Owg-7Y-3pt"/>
+                            <constraint firstAttribute="width" constant="7" id="gLP-36-BoP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-06-10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ak6-mY-DWF">
+                        <rect key="frame" x="26" y="12" width="72.5" height="18.5"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qLg-Yo-tf0">
+                        <rect key="frame" x="153" y="11" width="27" height="21"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkK-Ra-JMK">
+                        <rect key="frame" x="183" y="11" width="14" height="22"/>
+                        <state key="normal" image="live_icon_money"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y12-Q4-OBO">
+                        <rect key="frame" x="329" y="11.5" width="33" height="21"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qLg-Yo-tf0" firstAttribute="leading" secondItem="Ak6-mY-DWF" secondAttribute="trailing" constant="54.5" id="3QB-a7-aZL"/>
+                    <constraint firstItem="wkK-Ra-JMK" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9T8-Aa-eW9"/>
+                    <constraint firstItem="Ak6-mY-DWF" firstAttribute="leading" secondItem="Esm-bs-nmi" secondAttribute="trailing" constant="6" id="BSg-dw-ari"/>
+                    <constraint firstItem="Ak6-mY-DWF" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="H2i-Gf-Agf"/>
+                    <constraint firstItem="qLg-Yo-tf0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ke5-1g-HMv"/>
+                    <constraint firstItem="wkK-Ra-JMK" firstAttribute="leading" secondItem="qLg-Yo-tf0" secondAttribute="trailing" constant="3" id="brp-MC-Bcm"/>
+                    <constraint firstItem="Esm-bs-nmi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="f3W-9Z-2Px"/>
+                    <constraint firstItem="y12-Q4-OBO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="gwc-vl-CsX"/>
+                    <constraint firstAttribute="trailing" secondItem="y12-Q4-OBO" secondAttribute="trailing" constant="13" id="k19-dj-xsQ"/>
+                    <constraint firstItem="Esm-bs-nmi" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tyX-UG-aDh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="amountLabel" destination="y12-Q4-OBO" id="0Z4-mf-nyI"/>
+                <outlet property="coinLabel" destination="qLg-Yo-tf0" id="xp8-vb-Qed"/>
+                <outlet property="dateLabel" destination="Ak6-mY-DWF" id="aAX-Ck-wKj"/>
+                <outlet property="dotLabel" destination="Esm-bs-nmi" id="IGg-jr-3xz"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="live_icon_money" width="14" height="14"/>
+    </resources>
+</document>

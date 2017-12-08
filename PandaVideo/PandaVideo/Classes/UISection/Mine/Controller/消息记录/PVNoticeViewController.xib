@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PVNoticeViewController">
+            <connections>
+                <outlet property="noDataView" destination="atc-WM-Ig1" id="EEX-ZS-NIc"/>
+                <outlet property="noticeTableView" destination="ABK-bX-WQn" id="NtX-Yj-2fb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ABK-bX-WQn">
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kN6-qa-adw"/>
+                        <outlet property="delegate" destination="-1" id="Y9U-g8-EHf"/>
+                    </connections>
+                </tableView>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="atc-WM-Ig1">
+                    <rect key="frame" x="0.0" y="156" width="375" height="158"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_img_norecord4" translatesAutoresizingMaskIntoConstraints="NO" id="u48-yW-7gZ">
+                            <rect key="frame" x="139" y="0.0" width="97" height="97"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="97" id="Vih-Mp-eIk"/>
+                                <constraint firstAttribute="height" constant="97" id="nnm-Em-NJM"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无系统通知" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bkB-eL-Dci">
+                            <rect key="frame" x="141.5" y="107" width="92" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0039215686274509803" green="0.0039215686274509803" blue="0.0039215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="158" id="KFL-gi-r0x"/>
+                        <constraint firstItem="bkB-eL-Dci" firstAttribute="top" secondItem="u48-yW-7gZ" secondAttribute="bottom" constant="10" id="aIX-oD-kqK"/>
+                        <constraint firstItem="u48-yW-7gZ" firstAttribute="centerX" secondItem="atc-WM-Ig1" secondAttribute="centerX" id="hHN-Rf-4ti"/>
+                        <constraint firstItem="bkB-eL-Dci" firstAttribute="centerX" secondItem="atc-WM-Ig1" secondAttribute="centerX" id="qRE-IA-pP3"/>
+                        <constraint firstItem="u48-yW-7gZ" firstAttribute="top" secondItem="atc-WM-Ig1" secondAttribute="top" id="uYv-9S-awe"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="atc-WM-Ig1" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="82a-DW-xcp"/>
+                <constraint firstItem="atc-WM-Ig1" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="M0d-4u-9cF"/>
+                <constraint firstItem="atc-WM-Ig1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="156:667" id="aHg-07-DkU"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ABK-bX-WQn" secondAttribute="trailing" id="buP-0R-H6O"/>
+                <constraint firstItem="atc-WM-Ig1" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="bvs-EC-JW4"/>
+                <constraint firstItem="ABK-bX-WQn" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="oDL-DR-wLR"/>
+                <constraint firstItem="ABK-bX-WQn" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="pq0-Jw-4m3"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="ABK-bX-WQn" secondAttribute="bottom" id="rjO-zn-HFI"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-500" y="50"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_img_norecord4" width="96" height="96"/>
+    </resources>
+</document>

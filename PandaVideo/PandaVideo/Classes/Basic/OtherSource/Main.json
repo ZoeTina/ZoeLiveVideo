@@ -1,0 +1,22 @@
+ [
+      {
+      "clsName" : "PVHomeViewController",
+      "title" : "精选",
+      "imageName" : "home"
+      },
+      {
+      "clsName" : "PVLIveViewController",
+      "title" : "直播",
+      "imageName" : "live"
+      },
+      {
+      "clsName" : "PVActivityViewController",
+      "title" : "活动",
+      "imageName" : "ad"
+      },
+      {
+      "clsName" : "PVMineViewController",
+      "title" : "我的",
+      "imageName" : "mine"
+      }
+]

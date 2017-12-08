@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="resuPVVideoLiveChaanelCell" rowHeight="96" id="KGk-i7-Jjw" customClass="PVVideoLiveChaanelCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="节目名称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Tv-do-zf2">
+                        <rect key="frame" x="10" y="10" width="53.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="高清" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hLF-ds-4zP">
+                        <rect key="frame" x="280" y="12" width="30" height="12"/>
+                        <color key="backgroundColor" red="0.38039215686274508" green="0.82745098039215681" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="6lr-ZN-cSm"/>
+                            <constraint firstAttribute="width" constant="30" id="JO1-3S-9a8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtN-2H-SXp">
+                        <rect key="frame" x="8" y="26" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="CVa-a2-w1b"/>
+                            <constraint firstAttribute="width" secondItem="gtN-2H-SXp" secondAttribute="height" id="zBX-jK-wzT"/>
+                        </constraints>
+                        <state key="normal" image="live_icon_play_wihte"/>
+                        <state key="selected" image="live_icon_play_bule"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7:00 正在播放的节目名名称名称名称名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7Q-k8-bZw">
+                        <rect key="frame" x="28" y="29" width="282" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Azr-vN-jsc">
+                        <rect key="frame" x="10" y="94.5" width="300" height="1"/>
+                        <color key="backgroundColor" red="0.30588235294117649" green="0.30588235294117649" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="9rB-cW-u8o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="hLF-ds-4zP" firstAttribute="trailing" secondItem="Azr-vN-jsc" secondAttribute="trailing" id="3pQ-0Q-MH2"/>
+                    <constraint firstAttribute="trailing" secondItem="hLF-ds-4zP" secondAttribute="trailing" constant="10" id="66H-tC-5EA"/>
+                    <constraint firstItem="gtN-2H-SXp" firstAttribute="leading" secondItem="4Tv-do-zf2" secondAttribute="leading" constant="-2" id="8PO-Vl-gfa"/>
+                    <constraint firstAttribute="bottom" secondItem="Azr-vN-jsc" secondAttribute="bottom" id="8rN-gX-ycd"/>
+                    <constraint firstItem="v7Q-k8-bZw" firstAttribute="leading" secondItem="gtN-2H-SXp" secondAttribute="trailing" id="FQ4-Ww-UfG"/>
+                    <constraint firstItem="gtN-2H-SXp" firstAttribute="top" secondItem="4Tv-do-zf2" secondAttribute="bottom" id="QLc-K8-EFq"/>
+                    <constraint firstItem="Azr-vN-jsc" firstAttribute="leading" secondItem="4Tv-do-zf2" secondAttribute="leading" id="QT6-av-IcA"/>
+                    <constraint firstAttribute="trailing" secondItem="v7Q-k8-bZw" secondAttribute="trailing" constant="10" id="Ttl-Lb-mpX"/>
+                    <constraint firstItem="4Tv-do-zf2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="jOd-zj-bxO"/>
+                    <constraint firstItem="hLF-ds-4zP" firstAttribute="centerY" secondItem="4Tv-do-zf2" secondAttribute="centerY" id="jV2-KI-N2X"/>
+                    <constraint firstItem="v7Q-k8-bZw" firstAttribute="centerY" secondItem="gtN-2H-SXp" secondAttribute="centerY" id="pER-Eo-YFr"/>
+                    <constraint firstItem="4Tv-do-zf2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="vwI-dA-Gbg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="chaanelTextLabel" destination="v7Q-k8-bZw" id="pgr-ac-rcS"/>
+                <outlet property="chaanelTitleLael" destination="4Tv-do-zf2" id="J4l-E8-NYO"/>
+                <outlet property="chanelIconImageView" destination="gtN-2H-SXp" id="pKH-uf-iG7"/>
+                <outlet property="channelDetailLabelLeftConstraint" destination="FQ4-Ww-UfG" id="x8F-yE-xb3"/>
+                <outlet property="rightLabel" destination="hLF-ds-4zP" id="t38-Vs-rqA"/>
+            </connections>
+            <point key="canvasLocation" x="-72" y="-93"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="live_icon_play_bule" width="9" height="9"/>
+        <image name="live_icon_play_wihte" width="9" height="9"/>
+    </resources>
+</document>

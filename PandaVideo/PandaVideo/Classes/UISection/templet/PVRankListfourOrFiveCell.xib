@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="resuPVRankListfourOrFiveCell" id="gTV-IL-0wX" customClass="PVRankListfourOrFiveCell">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="245" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陈学东郑爽甜蜜下厨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSn-QH-1Lb">
+                        <rect key="frame" x="25" y="31" width="184" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPp-Qg-gDB">
+                        <rect key="frame" x="5" y="63.5" width="10" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="Idx-F8-KFe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视频标题视频标题视频标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Jh-K3-St4">
+                        <rect key="frame" x="25" y="11" width="184" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pP6-7T-li3">
+                        <rect key="frame" x="5" y="144" width="340" height="1"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="3m4-lo-3AK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="IPp-Qg-gDB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="3RN-3k-Isu"/>
+                <constraint firstItem="ZSn-QH-1Lb" firstAttribute="top" secondItem="4Jh-K3-St4" secondAttribute="bottom" constant="2" id="4gG-1D-9eO"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Jh-K3-St4" secondAttribute="trailing" priority="999" constant="10" id="WsM-Lk-r9X"/>
+                <constraint firstAttribute="bottom" secondItem="pP6-7T-li3" secondAttribute="bottom" id="YDU-F8-nm7"/>
+                <constraint firstItem="pP6-7T-li3" firstAttribute="leading" secondItem="IPp-Qg-gDB" secondAttribute="leading" id="aLc-ny-XEj"/>
+                <constraint firstAttribute="trailing" secondItem="pP6-7T-li3" secondAttribute="trailing" constant="-100" id="eyz-g5-jkG"/>
+                <constraint firstItem="4Jh-K3-St4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="11" id="h2O-da-V7q"/>
+                <constraint firstItem="4Jh-K3-St4" firstAttribute="leading" secondItem="IPp-Qg-gDB" secondAttribute="trailing" constant="10" id="k6N-Ko-qiR"/>
+                <constraint firstItem="ZSn-QH-1Lb" firstAttribute="leading" secondItem="4Jh-K3-St4" secondAttribute="leading" id="m3X-ce-WcC"/>
+                <constraint firstItem="ZSn-QH-1Lb" firstAttribute="trailing" secondItem="4Jh-K3-St4" secondAttribute="trailing" id="nDE-KR-tQD"/>
+                <constraint firstItem="IPp-Qg-gDB" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="uit-Gn-SyX"/>
+            </constraints>
+            <size key="customSize" width="245" height="145"/>
+            <connections>
+                <outlet property="bottomView" destination="pP6-7T-li3" id="oeH-Mf-qpr"/>
+                <outlet property="rankListDetailTitleLabel" destination="ZSn-QH-1Lb" id="Osg-ec-ajX"/>
+                <outlet property="rankListTitleLabel" destination="4Jh-K3-St4" id="9he-TT-Zbe"/>
+                <outlet property="rankListnumberLabel" destination="IPp-Qg-gDB" id="CBl-bU-Vrs"/>
+            </connections>
+            <point key="canvasLocation" x="-188.5" y="31.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

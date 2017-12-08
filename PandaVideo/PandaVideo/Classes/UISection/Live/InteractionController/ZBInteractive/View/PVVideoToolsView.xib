@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PVVideoToolsView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcv-4d-Ahn">
+                    <rect key="frame" x="66" y="0.0" width="40" height="40"/>
+                    <state key="normal" image="live_btn_quickcomment2"/>
+                    <connections>
+                        <action selector="didShowLiveBottomToolsButtonClick:" destination="-1" eventType="touchUpInside" id="0Vr-j6-Mft"/>
+                    </connections>
+                </button>
+                <button hidden="YES" opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S0C-CM-kB4">
+                    <rect key="frame" x="508" y="0.0" width="40" height="40"/>
+                    <state key="normal" image="live_btn_connect2"/>
+                    <connections>
+                        <action selector="didShowLiveBottomToolsButtonClick:" destination="-1" eventType="touchUpInside" id="r2Z-l5-Mdc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Msy-lN-fvG">
+                    <rect key="frame" x="561" y="0.0" width="40" height="40"/>
+                    <state key="normal" image="live_btn_gift2"/>
+                    <connections>
+                        <action selector="didShowLiveBottomToolsButtonClick:" destination="-1" eventType="touchUpInside" id="Ud2-FW-ZcR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyM-To-IBD">
+                    <rect key="frame" x="614" y="0.0" width="40" height="40"/>
+                    <state key="normal" image="live_btn_like_normal2" backgroundImage="live_btn_like_selected2"/>
+                    <connections>
+                        <action selector="didShowLiveBottomToolsButtonClick:" destination="-1" eventType="touchUpInside" id="91j-J0-z8h"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVI-BW-RBK">
+                    <rect key="frame" x="13" y="0.0" width="40" height="40"/>
+                    <state key="normal" image="live_btn_comment2"/>
+                    <connections>
+                        <action selector="didShowLiveBottomToolsButtonClick:" destination="-1" eventType="touchUpInside" id="KdA-lp-vNv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AIG-2z-Ouh">
+                    <rect key="frame" x="119" y="0.0" width="40" height="40"/>
+                    <state key="normal" image="live_btn_danmu2_off" backgroundImage="live_btn_danmu2_on"/>
+                    <connections>
+                        <action selector="didShowLiveBottomToolsButtonClick:" destination="-1" eventType="touchUpInside" id="You-Iy-JhC"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Msy-lN-fvG" firstAttribute="leading" secondItem="S0C-CM-kB4" secondAttribute="trailing" constant="13" id="BgY-PG-RWa"/>
+                <constraint firstItem="vVI-BW-RBK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DID-2R-mjB"/>
+                <constraint firstItem="Msy-lN-fvG" firstAttribute="centerY" secondItem="WyM-To-IBD" secondAttribute="centerY" id="EhG-tV-qSW"/>
+                <constraint firstItem="WyM-To-IBD" firstAttribute="leading" secondItem="Msy-lN-fvG" secondAttribute="trailing" constant="13" id="Fwr-FJ-0R4"/>
+                <constraint firstItem="S0C-CM-kB4" firstAttribute="centerY" secondItem="Msy-lN-fvG" secondAttribute="centerY" id="JYw-XB-WuK"/>
+                <constraint firstItem="vVI-BW-RBK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="LtM-Pq-WNm"/>
+                <constraint firstItem="mcv-4d-Ahn" firstAttribute="leading" secondItem="vVI-BW-RBK" secondAttribute="trailing" constant="13" id="eFn-zT-GYj"/>
+                <constraint firstItem="WyM-To-IBD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jOP-vL-3ha"/>
+                <constraint firstItem="mcv-4d-Ahn" firstAttribute="centerY" secondItem="vVI-BW-RBK" secondAttribute="centerY" id="kLu-Og-zvM"/>
+                <constraint firstAttribute="trailing" secondItem="WyM-To-IBD" secondAttribute="trailing" constant="13" id="pcE-UZ-Nog"/>
+                <constraint firstItem="AIG-2z-Ouh" firstAttribute="centerY" secondItem="mcv-4d-Ahn" secondAttribute="centerY" id="vWw-rs-QWw"/>
+                <constraint firstItem="AIG-2z-Ouh" firstAttribute="leading" secondItem="mcv-4d-Ahn" secondAttribute="trailing" constant="13" id="zI8-ob-fVb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="35.5" y="-258.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="2dd-MJ-4gG">
+            <rect key="frame" x="0.0" y="0.0" width="667" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiU-xT-Xc6">
+                    <rect key="frame" x="0.0" y="0.0" width="31" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="0VU-zg-4np"/>
+                    </constraints>
+                    <state key="normal" image="all_btn_back_white"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="那小子真帅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKZ-1W-Itf">
+                    <rect key="frame" x="36" y="-0.5" width="70" height="20"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="987万人在线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZr-PS-FTu">
+                    <rect key="frame" x="36" y="17" width="69" height="17"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                    <color key="textColor" red="0.16470588235294117" green="0.70588235294117641" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.56862745100000001" green="0.84313725490000002" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IZr-PS-FTu" firstAttribute="leading" secondItem="BiU-xT-Xc6" secondAttribute="trailing" constant="5" id="1iI-dK-623"/>
+                <constraint firstItem="BiU-xT-Xc6" firstAttribute="top" secondItem="2dd-MJ-4gG" secondAttribute="top" id="1sq-hM-KQe"/>
+                <constraint firstItem="IZr-PS-FTu" firstAttribute="centerY" secondItem="2dd-MJ-4gG" secondAttribute="centerY" constant="8" id="Hss-xp-Vb7"/>
+                <constraint firstItem="IKZ-1W-Itf" firstAttribute="centerY" secondItem="2dd-MJ-4gG" secondAttribute="centerY" constant="-8" id="JVp-hs-XL0"/>
+                <constraint firstAttribute="bottom" secondItem="BiU-xT-Xc6" secondAttribute="bottom" id="R4C-HV-HEB"/>
+                <constraint firstItem="BiU-xT-Xc6" firstAttribute="centerY" secondItem="2dd-MJ-4gG" secondAttribute="centerY" id="X93-Vb-pTY"/>
+                <constraint firstItem="BiU-xT-Xc6" firstAttribute="leading" secondItem="2dd-MJ-4gG" secondAttribute="leading" id="b4h-Cf-EtL"/>
+                <constraint firstItem="IKZ-1W-Itf" firstAttribute="leading" secondItem="BiU-xT-Xc6" secondAttribute="trailing" constant="5" id="dxr-Cw-qBM"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="35.5" y="-168.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="dXu-yZ-MPj">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjj-4D-voi">
+                    <rect key="frame" x="345" y="6" width="17" height="22"/>
+                    <state key="normal" image="live_btn_fullscreen"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.56862745100000001" green="0.84313725490000002" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Yjj-4D-voi" firstAttribute="centerY" secondItem="dXu-yZ-MPj" secondAttribute="centerY" id="0V6-Cg-MQP"/>
+                <constraint firstAttribute="trailing" secondItem="Yjj-4D-voi" secondAttribute="trailing" constant="13" id="ZCm-ry-cdD"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="36" y="-66"/>
+        </view>
+        <view contentMode="scaleToFill" id="8C4-4m-Wuj">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r6A-IU-zmW">
+                    <rect key="frame" x="0.0" y="0.0" width="31" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="fYk-i4-kH7"/>
+                    </constraints>
+                    <state key="normal" image="all_btn_back_white"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="那小子真帅" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NVg-Al-cy5">
+                    <rect key="frame" x="36" y="-0.5" width="70" height="20"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="987万人在线" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHm-cn-C87">
+                    <rect key="frame" x="36" y="17" width="69" height="17"/>
+                    <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                    <color key="textColor" red="0.1647058824" green="0.70588235290000001" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJT-dN-ML7">
+                    <rect key="frame" x="342" y="7" width="20" height="22"/>
+                    <state key="normal" image="live_btn_share"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="04f-5q-AFW">
+                    <rect key="frame" x="308" y="7" width="20" height="22"/>
+                    <state key="normal" image="live_btn_send"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.56862745100000001" green="0.84313725490000002" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NVg-Al-cy5" firstAttribute="leading" secondItem="r6A-IU-zmW" secondAttribute="trailing" constant="5" id="02Z-Os-Ycy"/>
+                <constraint firstItem="r6A-IU-zmW" firstAttribute="centerY" secondItem="8C4-4m-Wuj" secondAttribute="centerY" id="60t-V0-9SO"/>
+                <constraint firstItem="FHm-cn-C87" firstAttribute="centerY" secondItem="8C4-4m-Wuj" secondAttribute="centerY" constant="8" id="6vF-NY-nXr"/>
+                <constraint firstItem="04f-5q-AFW" firstAttribute="centerY" secondItem="xJT-dN-ML7" secondAttribute="centerY" id="BKN-YU-g5O"/>
+                <constraint firstItem="NVg-Al-cy5" firstAttribute="centerY" secondItem="8C4-4m-Wuj" secondAttribute="centerY" constant="-8" id="BuS-R8-Eba"/>
+                <constraint firstAttribute="bottom" secondItem="r6A-IU-zmW" secondAttribute="bottom" id="Oap-W7-4mk"/>
+                <constraint firstItem="xJT-dN-ML7" firstAttribute="centerY" secondItem="8C4-4m-Wuj" secondAttribute="centerY" id="QTt-cK-1Eo"/>
+                <constraint firstItem="xJT-dN-ML7" firstAttribute="leading" secondItem="04f-5q-AFW" secondAttribute="trailing" constant="14" id="SbZ-nW-eCD"/>
+                <constraint firstItem="r6A-IU-zmW" firstAttribute="leading" secondItem="8C4-4m-Wuj" secondAttribute="leading" id="TWJ-UZ-aZt"/>
+                <constraint firstItem="FHm-cn-C87" firstAttribute="leading" secondItem="r6A-IU-zmW" secondAttribute="trailing" constant="5" id="c0c-gv-UgV"/>
+                <constraint firstAttribute="trailing" secondItem="xJT-dN-ML7" secondAttribute="trailing" constant="13" id="sgd-xz-264"/>
+                <constraint firstItem="r6A-IU-zmW" firstAttribute="top" secondItem="8C4-4m-Wuj" secondAttribute="top" id="tQg-wO-q5p"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="36" y="40"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="all_btn_back_white" width="16" height="16"/>
+        <image name="live_btn_comment2" width="40" height="40"/>
+        <image name="live_btn_connect2" width="40" height="40"/>
+        <image name="live_btn_danmu2_off" width="40" height="40"/>
+        <image name="live_btn_danmu2_on" width="40" height="40"/>
+        <image name="live_btn_fullscreen" width="17" height="17"/>
+        <image name="live_btn_gift2" width="40" height="40"/>
+        <image name="live_btn_like_normal2" width="40" height="40"/>
+        <image name="live_btn_like_selected2" width="40" height="40"/>
+        <image name="live_btn_quickcomment2" width="40" height="40"/>
+        <image name="live_btn_send" width="20" height="20"/>
+        <image name="live_btn_share" width="20" height="20"/>
+    </resources>
+</document>

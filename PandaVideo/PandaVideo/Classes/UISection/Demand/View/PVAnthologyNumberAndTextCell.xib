@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="resuPVAnthologyNumberAndTextCell" id="gTV-IL-0wX" customClass="PVAnthologyNumberAndTextCell">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="232"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="286" height="232"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QJa-Mq-L3h">
+                        <rect key="frame" x="0.0" y="0.0" width="286" height="159"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="QJa-Mq-L3h" secondAttribute="height" multiplier="135:75" id="eaU-nU-Lon"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-02-05期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OM-g8-nKY">
+                        <rect key="frame" x="214.5" y="145" width="68.5" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="夏至未至" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hpj-gx-zKy">
+                        <rect key="frame" x="0.0" y="167" width="286" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="QJa-Mq-L3h" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="79o-TN-2QA"/>
+                <constraint firstItem="hpj-gx-zKy" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Bbe-ni-Xj3"/>
+                <constraint firstAttribute="trailing" secondItem="QJa-Mq-L3h" secondAttribute="trailing" id="GOe-kO-pvB"/>
+                <constraint firstItem="QJa-Mq-L3h" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xml-9j-bKE"/>
+                <constraint firstItem="3OM-g8-nKY" firstAttribute="trailing" secondItem="QJa-Mq-L3h" secondAttribute="trailing" constant="-3" id="aCr-qa-9jR"/>
+                <constraint firstItem="3OM-g8-nKY" firstAttribute="bottom" secondItem="QJa-Mq-L3h" secondAttribute="bottom" constant="-2" id="dmS-fW-iRy"/>
+                <constraint firstItem="hpj-gx-zKy" firstAttribute="top" secondItem="QJa-Mq-L3h" secondAttribute="bottom" constant="8" id="e1m-fw-osI"/>
+                <constraint firstAttribute="trailing" secondItem="hpj-gx-zKy" secondAttribute="trailing" id="qs8-tS-P9a"/>
+            </constraints>
+            <size key="customSize" width="286" height="232"/>
+            <connections>
+                <outlet property="anthologyImageView" destination="QJa-Mq-L3h" id="Pgs-JT-GXC"/>
+                <outlet property="anthologyTimeLabel" destination="3OM-g8-nKY" id="UeP-ns-o5J"/>
+                <outlet property="anthologyTitleLabel" destination="hpj-gx-zKy" id="jkN-6a-qB6"/>
+            </connections>
+            <point key="canvasLocation" x="-36" y="65"/>
+        </collectionViewCell>
+    </objects>
+</document>

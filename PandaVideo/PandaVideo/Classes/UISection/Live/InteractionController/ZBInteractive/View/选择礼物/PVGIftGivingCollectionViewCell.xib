@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="PingFang.ttc">
+            <string>PingFangSC-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PVGIftGivingCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="71" height="104"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="71" height="104"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJs-55-g7T">
+                        <rect key="frame" x="0.0" y="0.0" width="71" height="50"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Stc-yM-jLJ"/>
+                        </constraints>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="玫瑰花" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96n-c7-ms8">
+                        <rect key="frame" x="15.5" y="59" width="39.5" height="18.5"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4b0-Ug-TUu">
+                        <rect key="frame" x="15.5" y="84.5" width="26.5" height="17"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84R-1h-4Yk">
+                        <rect key="frame" x="42" y="82" width="14" height="22"/>
+                        <state key="normal" image="live_icon_money"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="84R-1h-4Yk" firstAttribute="centerY" secondItem="4b0-Ug-TUu" secondAttribute="centerY" id="Bnc-yd-ZNl"/>
+                <constraint firstItem="84R-1h-4Yk" firstAttribute="leading" secondItem="4b0-Ug-TUu" secondAttribute="trailing" id="Dpj-dh-G9d"/>
+                <constraint firstItem="4b0-Ug-TUu" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" constant="-7" id="Mfg-0p-481"/>
+                <constraint firstItem="JJs-55-g7T" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TFL-4F-YvC"/>
+                <constraint firstItem="96n-c7-ms8" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="d8k-r2-LEH"/>
+                <constraint firstItem="96n-c7-ms8" firstAttribute="top" secondItem="JJs-55-g7T" secondAttribute="bottom" constant="9" id="eVK-QJ-CKW"/>
+                <constraint firstItem="4b0-Ug-TUu" firstAttribute="top" secondItem="96n-c7-ms8" secondAttribute="bottom" constant="7" id="tDT-T6-cUX"/>
+                <constraint firstItem="JJs-55-g7T" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tOE-GX-MLl"/>
+                <constraint firstAttribute="trailing" secondItem="JJs-55-g7T" secondAttribute="trailing" id="zHr-CY-HAY"/>
+            </constraints>
+            <size key="customSize" width="71" height="122"/>
+            <point key="canvasLocation" x="35.5" y="88"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="live_icon_money" width="14" height="14"/>
+    </resources>
+</document>

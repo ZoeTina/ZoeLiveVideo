@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PVFamilyDetailViewController">
+            <connections>
+                <outlet property="existFamilyCenterbutton" destination="VMa-S1-8jQ" id="Hfd-W7-g3T"/>
+                <outlet property="familyCenterNameLabel" destination="4j1-hW-GIo" id="dR0-53-TrX"/>
+                <outlet property="familyNameCell" destination="qUI-T9-cbc" id="cCY-Gz-q3x"/>
+                <outlet property="footerView" destination="QVc-BP-z4k" id="xl8-5L-GBm"/>
+                <outlet property="nickCell" destination="CFB-qR-vCa" id="90g-38-MNk"/>
+                <outlet property="nickNameLabel" destination="2xa-Jm-9NW" id="f5s-tu-Qyn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-567" y="-284"/>
+        </view>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="CFB-qR-vCa">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CFB-qR-vCa" id="drs-QP-Qsk">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的家族昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I2X-zR-0XN">
+                        <rect key="frame" x="13" y="16.5" width="92" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xa-Jm-9NW">
+                        <rect key="frame" x="348" y="26" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_btn_enter" translatesAutoresizingMaskIntoConstraints="NO" id="tAE-gb-ZvP">
+                        <rect key="frame" x="348" y="18.5" width="14" height="14"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="tAE-gb-ZvP" secondAttribute="trailing" constant="13" id="VxK-ay-C4b"/>
+                    <constraint firstItem="tAE-gb-ZvP" firstAttribute="leading" secondItem="2xa-Jm-9NW" secondAttribute="trailing" id="w2k-PL-c7l"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="tAE-gb-ZvP" firstAttribute="centerY" secondItem="CFB-qR-vCa" secondAttribute="centerY" id="AOE-Be-LPc"/>
+                <constraint firstItem="I2X-zR-0XN" firstAttribute="centerY" secondItem="CFB-qR-vCa" secondAttribute="centerY" id="O5Q-ZU-mfO"/>
+                <constraint firstItem="2xa-Jm-9NW" firstAttribute="centerY" secondItem="CFB-qR-vCa" secondAttribute="centerY" id="Z5a-aZ-uWn"/>
+                <constraint firstItem="I2X-zR-0XN" firstAttribute="leading" secondItem="CFB-qR-vCa" secondAttribute="trailing" multiplier="13:375" id="ven-zl-6XK"/>
+            </constraints>
+            <point key="canvasLocation" x="-1386" y="-591"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qUI-T9-cbc">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qUI-T9-cbc" id="atB-ve-whO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="50.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="圈昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwi-nJ-pUU">
+                        <rect key="frame" x="13" y="16.5" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_btn_enter" translatesAutoresizingMaskIntoConstraints="NO" id="BiK-J2-q1W">
+                        <rect key="frame" x="348" y="18.5" width="14" height="14"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4j1-hW-GIo">
+                        <rect key="frame" x="348" y="26" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BiK-J2-q1W" firstAttribute="leading" secondItem="4j1-hW-GIo" secondAttribute="trailing" id="gvo-pC-5jn"/>
+                    <constraint firstAttribute="trailing" secondItem="BiK-J2-q1W" secondAttribute="trailing" constant="13" id="wcO-VA-GTA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="BiK-J2-q1W" firstAttribute="centerY" secondItem="qUI-T9-cbc" secondAttribute="centerY" id="FDx-ed-nR2"/>
+                <constraint firstItem="Qwi-nJ-pUU" firstAttribute="leading" secondItem="qUI-T9-cbc" secondAttribute="trailing" multiplier="13:375" id="cVX-Df-Njo"/>
+                <constraint firstItem="4j1-hW-GIo" firstAttribute="centerY" secondItem="qUI-T9-cbc" secondAttribute="centerY" id="eex-zg-rhQ"/>
+                <constraint firstItem="Qwi-nJ-pUU" firstAttribute="centerY" secondItem="qUI-T9-cbc" secondAttribute="centerY" id="uKh-3O-qVj"/>
+            </constraints>
+            <point key="canvasLocation" x="-900" y="-265"/>
+        </tableViewCell>
+        <view contentMode="scaleToFill" id="QVc-BP-z4k">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VMa-S1-8jQ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                    <state key="normal" title="退出家庭圈">
+                        <color key="titleColor" red="0.16470588235294117" green="0.70588235294117641" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VMa-S1-8jQ" secondAttribute="trailing" id="Mg2-JL-hjY"/>
+                <constraint firstItem="VMa-S1-8jQ" firstAttribute="top" secondItem="tL1-oQ-Bav" secondAttribute="top" id="PNk-ev-igQ"/>
+                <constraint firstItem="tL1-oQ-Bav" firstAttribute="bottom" secondItem="VMa-S1-8jQ" secondAttribute="bottom" id="Uv5-h6-OSh"/>
+                <constraint firstItem="VMa-S1-8jQ" firstAttribute="leading" secondItem="tL1-oQ-Bav" secondAttribute="leading" id="bBq-Z9-BZ8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="tL1-oQ-Bav"/>
+            <point key="canvasLocation" x="-1337" y="-159"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_btn_enter" width="14" height="14"/>
+    </resources>
+</document>

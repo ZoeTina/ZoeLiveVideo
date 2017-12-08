@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="resuPVStarDetailCollectionViewCell" id="gTV-IL-0wX" customClass="PVStarDetailCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="171" height="158"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="171" height="158"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ViH-5j-d6y">
+                        <rect key="frame" x="0.0" y="0.0" width="171" height="96.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="96.5" id="UM6-KX-dzz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="夏至未至" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhx-mx-u2A">
+                        <rect key="frame" x="0.0" y="104.5" width="171" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="陈学东郑爽甜蜜下厨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gnD-mE-6OE">
+                        <rect key="frame" x="0.0" y="125.5" width="171" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Uhx-mx-u2A" firstAttribute="top" secondItem="ViH-5j-d6y" secondAttribute="bottom" constant="8" id="0jc-4g-zyS"/>
+                <constraint firstItem="ViH-5j-d6y" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4QT-Y4-De1"/>
+                <constraint firstItem="Uhx-mx-u2A" firstAttribute="leading" secondItem="ViH-5j-d6y" secondAttribute="leading" id="AAs-mn-heP"/>
+                <constraint firstItem="gnD-mE-6OE" firstAttribute="trailing" secondItem="Uhx-mx-u2A" secondAttribute="trailing" id="AjC-uv-5a5"/>
+                <constraint firstItem="Uhx-mx-u2A" firstAttribute="trailing" secondItem="ViH-5j-d6y" secondAttribute="trailing" id="FCd-Bc-42r"/>
+                <constraint firstItem="gnD-mE-6OE" firstAttribute="top" secondItem="Uhx-mx-u2A" secondAttribute="bottom" constant="3" id="JuB-Gj-HlL"/>
+                <constraint firstAttribute="trailing" secondItem="ViH-5j-d6y" secondAttribute="trailing" id="XxI-4z-bMe"/>
+                <constraint firstItem="gnD-mE-6OE" firstAttribute="leading" secondItem="Uhx-mx-u2A" secondAttribute="leading" id="gMM-1d-BxE"/>
+                <constraint firstItem="ViH-5j-d6y" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vRP-fy-Pg9"/>
+            </constraints>
+            <size key="customSize" width="171" height="158"/>
+            <connections>
+                <outlet property="videoImageView" destination="ViH-5j-d6y" id="I70-dC-t6u"/>
+                <outlet property="videoImageViewHeightConstaint" destination="UM6-KX-dzz" id="vVs-4v-Kax"/>
+                <outlet property="videoTextLabel" destination="gnD-mE-6OE" id="uIa-rB-we5"/>
+                <outlet property="videoTitleLabel" destination="Uhx-mx-u2A" id="4z0-qi-nF6"/>
+            </connections>
+            <point key="canvasLocation" x="-338" y="13"/>
+        </collectionViewCell>
+    </objects>
+</document>

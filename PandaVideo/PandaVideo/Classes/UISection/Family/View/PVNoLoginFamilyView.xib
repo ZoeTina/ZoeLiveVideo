@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PVNoLoginFamilyView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ouv-uN-g3h">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="biaoqing" translatesAutoresizingMaskIntoConstraints="NO" id="gOV-tC-Wct">
+                    <rect key="frame" x="20" y="40.5" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="8y3-1x-U9f"/>
+                        <constraint firstAttribute="height" constant="20" id="IhW-dl-tJo"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂时没有邀请，没关系你可以邀请他们呀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESj-fw-8jq">
+                    <rect key="frame" x="50" y="42" width="315" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.28627450980392155" green="0.38431372549019605" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Ouv-uN-g3h" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="15G-up-Xuh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ESj-fw-8jq" secondAttribute="trailing" constant="10" id="1LQ-hx-xwV"/>
+                <constraint firstItem="ESj-fw-8jq" firstAttribute="centerY" secondItem="gOV-tC-Wct" secondAttribute="centerY" id="KRH-HW-wfV"/>
+                <constraint firstItem="gOV-tC-Wct" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="5" id="R53-bN-YFR"/>
+                <constraint firstItem="ESj-fw-8jq" firstAttribute="leading" secondItem="gOV-tC-Wct" secondAttribute="trailing" constant="10" id="ZTh-Cy-Ikp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ouv-uN-g3h" secondAttribute="trailing" id="dsU-O9-Jh7"/>
+                <constraint firstAttribute="bottom" secondItem="Ouv-uN-g3h" secondAttribute="bottom" id="fC5-Iu-ghk"/>
+                <constraint firstItem="gOV-tC-Wct" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="fnc-s5-dxF"/>
+                <constraint firstItem="Ouv-uN-g3h" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zTO-gD-NJt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bgImageView" destination="Ouv-uN-g3h" id="KpE-Sz-hhV"/>
+                <outlet property="iconImageView" destination="gOV-tC-Wct" id="DCo-p5-Lmg"/>
+                <outlet property="reminderLabel" destination="ESj-fw-8jq" id="Uqz-Na-pln"/>
+            </connections>
+            <point key="canvasLocation" x="-37.5" y="-248.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="biaoqing" width="26" height="26"/>
+    </resources>
+</document>

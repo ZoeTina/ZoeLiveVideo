@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PVAboutUsViewController">
+            <connections>
+                <outlet property="iconImageView" destination="lqb-M8-Lmg" id="kpq-7u-4ps"/>
+                <outlet property="topLayout" destination="aq5-kU-Npt" id="EWx-nV-qnD"/>
+                <outlet property="versionLabel" destination="da5-ll-RIo" id="AmJ-rD-yTC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aboutUs" translatesAutoresizingMaskIntoConstraints="NO" id="lqb-M8-Lmg">
+                    <rect key="frame" x="151.5" y="47" width="71" height="71"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="VFv-3C-7Xp"/>
+                        <constraint firstAttribute="height" constant="71" id="XH1-LL-YJU"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da5-ll-RIo">
+                    <rect key="frame" x="166.5" y="139" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O8-cM-aa5">
+                    <rect key="frame" x="13" y="180" width="349" height="125.5"/>
+                    <string key="text">熊猫视频是由四川广播电视台倾情打造的手机视频在线播放平台，面向有家庭概念的年轻人，以本地聚合性泛娱乐内容、精细化社群运营为核心，以趣玩直播、跨屏互动服务为亮点，通过完善的会员体系，打造系列独具本地文化特色的大型活动，将内容、产品、用户三方深度结合。</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="copyright © 熊猫视频 All Right Reserved" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0U-CO-rI2">
+                    <rect key="frame" x="91.5" y="635" width="192.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="N0U-CO-rI2" secondAttribute="bottom" constant="20" id="10c-5M-L6w"/>
+                <constraint firstItem="da5-ll-RIo" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="9pI-GM-fdS"/>
+                <constraint firstItem="da5-ll-RIo" firstAttribute="top" secondItem="lqb-M8-Lmg" secondAttribute="bottom" constant="21" id="Xw5-rV-1lS"/>
+                <constraint firstItem="lqb-M8-Lmg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="47" id="aq5-kU-Npt"/>
+                <constraint firstItem="N0U-CO-rI2" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="bPy-N8-NGD"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="3O8-cM-aa5" secondAttribute="trailing" constant="13" id="d29-Ft-X45"/>
+                <constraint firstItem="lqb-M8-Lmg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="h9B-ey-dms"/>
+                <constraint firstItem="3O8-cM-aa5" firstAttribute="top" secondItem="da5-ll-RIo" secondAttribute="bottom" constant="20" id="nBJ-3p-bKW"/>
+                <constraint firstItem="3O8-cM-aa5" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="13" id="ubf-mG-bXy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="261" y="-45"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="aboutUs" width="60" height="60"/>
+    </resources>
+</document>

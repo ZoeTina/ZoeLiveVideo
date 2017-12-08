@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PVShakeSleepView">
+            <rect key="frame" x="0.0" y="0.0" width="307" height="239"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sleepBg" translatesAutoresizingMaskIntoConstraints="NO" id="krd-rg-DRs">
+                    <rect key="frame" x="0.0" y="0.0" width="307" height="239"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小主，我回家睡一会" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="elO-Sf-uaR">
+                    <rect key="frame" x="0.0" y="123" width="307" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cy4-Ew-Ig3">
+                    <rect key="frame" x="24" y="156" width="259" height="20"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="睡醒了跟你招手" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhR-IQ-tj9">
+                            <rect key="frame" x="0.0" y="0.0" width="93" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yaoyiyao" translatesAutoresizingMaskIntoConstraints="NO" id="CSs-Hq-5yg">
+                            <rect key="frame" x="93" y="0.0" width="20" height="20"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在一起愉快的互相玩耍呦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R0A-Br-iUb">
+                            <rect key="frame" x="113" y="0.0" width="146" height="20"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0r7-qT-Aqr">
+                    <rect key="frame" x="0.0" y="202" width="307" height="1"/>
+                    <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="3Ad-u4-WGf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUl-ka-e6x">
+                    <rect key="frame" x="0.0" y="203" width="307" height="36"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="知道了">
+                        <color key="titleColor" red="0.33333333333333331" green="0.76470588235294112" blue="0.9137254901960784" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancleButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="5VL-cp-gv8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="0r7-qT-Aqr" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="30n-cj-muh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="elO-Sf-uaR" secondAttribute="trailing" id="82K-NX-pvQ"/>
+                <constraint firstItem="krd-rg-DRs" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="9K8-lF-Tth"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="krd-rg-DRs" secondAttribute="bottom" id="C1l-Cl-qUj"/>
+                <constraint firstItem="0r7-qT-Aqr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DEO-WF-ecx"/>
+                <constraint firstItem="eUl-ka-e6x" firstAttribute="top" secondItem="0r7-qT-Aqr" secondAttribute="bottom" id="K1L-YH-EUp"/>
+                <constraint firstItem="elO-Sf-uaR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="123:239" id="PrO-yc-bNY"/>
+                <constraint firstItem="cy4-Ew-Ig3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="156:239" id="QDq-Ar-JRi"/>
+                <constraint firstItem="eUl-ka-e6x" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="QXT-FS-TGV"/>
+                <constraint firstItem="elO-Sf-uaR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Vpp-KE-cG3"/>
+                <constraint firstItem="krd-rg-DRs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eZf-m8-Pyc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="krd-rg-DRs" secondAttribute="trailing" id="hMn-N3-app"/>
+                <constraint firstItem="cy4-Ew-Ig3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="tx6-K0-axU"/>
+                <constraint firstItem="eUl-ka-e6x" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="v4l-Tp-6eI"/>
+                <constraint firstItem="eUl-ka-e6x" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="xxV-lq-sEk"/>
+                <constraint firstItem="eUl-ka-e6x" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="36:236" id="zMo-Kc-Ntd"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="descOneLabel" destination="LhR-IQ-tj9" id="bpi-Gh-dh2"/>
+                <outlet property="descTwoLabel" destination="R0A-Br-iUb" id="mdA-mw-PHV"/>
+                <outlet property="sureButton" destination="eUl-ka-e6x" id="wb7-1e-lG2"/>
+                <outlet property="titleLabel" destination="elO-Sf-uaR" id="ZpN-S0-UpY"/>
+            </connections>
+            <point key="canvasLocation" x="-468" y="-78"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sleepBg" width="307" height="238"/>
+        <image name="yaoyiyao" width="20" height="20"/>
+    </resources>
+</document>

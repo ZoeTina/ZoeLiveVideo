@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Lwy-Bf-36h">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myvideo_icon_upload-white" translatesAutoresizingMaskIntoConstraints="NO" id="O3x-Ai-gx6">
+                    <rect key="frame" x="38" y="10" width="25" height="25"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上传中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDL-Ql-Zd7">
+                    <rect key="frame" x="28.5" y="40" width="44" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iDL-Ql-Zd7" firstAttribute="top" secondItem="O3x-Ai-gx6" secondAttribute="bottom" constant="5" id="6Lo-FV-igh"/>
+                <constraint firstItem="iDL-Ql-Zd7" firstAttribute="centerX" secondItem="Qz1-Lf-1wr" secondAttribute="centerX" id="EwR-OD-sUo"/>
+                <constraint firstItem="O3x-Ai-gx6" firstAttribute="centerX" secondItem="Qz1-Lf-1wr" secondAttribute="centerX" id="Fgs-5O-j4z"/>
+                <constraint firstItem="O3x-Ai-gx6" firstAttribute="top" secondItem="Qz1-Lf-1wr" secondAttribute="top" constant="10" id="QJu-VQ-HPZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="Qz1-Lf-1wr"/>
+            <point key="canvasLocation" x="475" y="231"/>
+        </view>
+        <view contentMode="scaleToFill" id="9dd-mf-eZe">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="视频处理中..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znB-7G-gVO">
+                    <rect key="frame" x="17" y="24" width="66.5" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="znB-7G-gVO" firstAttribute="centerY" secondItem="xex-S5-fbH" secondAttribute="centerY" id="CdL-vg-DC5"/>
+                <constraint firstItem="znB-7G-gVO" firstAttribute="centerX" secondItem="xex-S5-fbH" secondAttribute="centerX" id="RXr-8V-Tcz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="xex-S5-fbH"/>
+            <point key="canvasLocation" x="952" y="231"/>
+        </view>
+        <view contentMode="scaleToFill" id="ygN-Uf-6ie">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNe-Ns-vHi">
+                    <rect key="frame" x="12" y="17" width="76" height="26"/>
+                    <color key="backgroundColor" red="0.16470588235294117" green="0.70588235294117641" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="WAB-0z-Njz"/>
+                        <constraint firstAttribute="height" constant="26" id="lcc-Id-GTG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="重新发布">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="13"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wNe-Ns-vHi" firstAttribute="centerX" secondItem="C7f-bG-fBk" secondAttribute="centerX" id="2as-AM-8fh"/>
+                <constraint firstItem="wNe-Ns-vHi" firstAttribute="centerY" secondItem="C7f-bG-fBk" secondAttribute="centerY" id="j1m-eY-bHK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="C7f-bG-fBk"/>
+            <point key="canvasLocation" x="769.5" y="340.5"/>
+        </view>
+        <view contentMode="scaleToFill" id="xkl-nk-pec">
+            <rect key="frame" x="0.0" y="0.0" width="101" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvw-88-FLU">
+                    <rect key="frame" x="12" y="17" width="76" height="26"/>
+                    <color key="backgroundColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="BDB-Pf-EgM"/>
+                        <constraint firstAttribute="height" constant="26" id="q3r-YU-5Ip"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <state key="normal" title="重新发布">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="13"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tvw-88-FLU" firstAttribute="centerX" secondItem="0fS-ES-cJ5" secondAttribute="centerX" id="dPT-fs-diF"/>
+                <constraint firstItem="tvw-88-FLU" firstAttribute="centerY" secondItem="0fS-ES-cJ5" secondAttribute="centerY" id="teI-uv-8hO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="0fS-ES-cJ5"/>
+            <point key="canvasLocation" x="1007" y="355"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="myvideo_icon_upload-white" width="25" height="25"/>
+    </resources>
+</document>

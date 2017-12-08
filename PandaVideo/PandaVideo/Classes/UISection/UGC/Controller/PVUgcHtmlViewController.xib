@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PVUgcHtmlViewController">
+            <connections>
+                <outlet property="joinButton" destination="V7D-ff-OVa" id="Frq-8u-Zrt"/>
+                <outlet property="reloadButton" destination="FBp-Ar-YCv" id="qhA-eG-QfB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBp-Ar-YCv">
+                    <rect key="frame" x="112.5" y="328.5" width="150" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="hTr-7I-iBQ"/>
+                        <constraint firstAttribute="height" constant="30" id="vRk-Up-Qmq"/>
+                    </constraints>
+                    <state key="normal" title="重新加载">
+                        <color key="titleColor" red="0.85490196080000003" green="0.34901960780000002" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="reloadWebView:" destination="-1" eventType="touchUpInside" id="UhV-z1-neg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7D-ff-OVa">
+                    <rect key="frame" x="0.0" y="627" width="375" height="40"/>
+                    <color key="backgroundColor" red="0.85490196078431369" green="0.34901960784313724" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="h1Q-Hw-K18"/>
+                    </constraints>
+                    <state key="normal" title="报名参加">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startEditVideo:" destination="-1" eventType="touchUpInside" id="pz9-aT-kFj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="FBp-Ar-YCv" firstAttribute="centerY" secondItem="Q5M-cg-NOt" secondAttribute="centerY" id="5zq-g8-8uj"/>
+                <constraint firstItem="V7D-ff-OVa" firstAttribute="bottom" secondItem="Q5M-cg-NOt" secondAttribute="bottom" id="XFc-iZ-LAf"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="V7D-ff-OVa" secondAttribute="trailing" id="gON-d0-Ghv"/>
+                <constraint firstItem="V7D-ff-OVa" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="jGu-Qz-7lt"/>
+                <constraint firstItem="FBp-Ar-YCv" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="vR4-Ak-rFy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-851" y="580"/>
+        </view>
+    </objects>
+</document>

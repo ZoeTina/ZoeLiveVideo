@@ -1,0 +1,103 @@
+//
+//  PrefixHeader.pch
+//  SiChuanFocus
+//
+//  Created by xiangjf on 2017/6/14.
+//  Copyright © 2017年 Zcy. All rights reserved.
+//
+
+#ifdef __OBJC__
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "SCObjc-Category.h"
+#import "UIImageView+WebCache.h"
+//#import "MJRefresh.h"
+#import "AFNetworking.h"
+#import "MBProgressHUD.h"
+#import "Masonry.h"
+#import "NSUserData.h"
+#import "URLDefine.h"
+#import "ConstKey.h"
+#import "AppDefine.h"
+#import "NotificationDefine.h"
+#import "SCNavigationController.h"
+#import "UIView+SCFactory.h"
+#import "UIFont+Font.h"
+#import "SCSmallTool.h"
+#import "QWArrayDataSource.h"
+#import "MJRefresh.h"
+#import "SCConst.h"
+#import "AppConstant.h"
+#import "PVNetTool.h"
+#import "PVNetModel.h"
+#import "AppDelegate.h"
+#import "PVUniversalJump.h"
+#import "MBProgressHUD+MJ.h"
+#import "PVFamilyCircleAlertControlelr.h"
+
+
+#define PV(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+#define kPictureW 375.0 //设计图纸的宽
+#define kPictureH 667.0 //设计图纸的高
+#define kDistanceHeightRatio(r) r*kScreenHeight/kPictureH
+#define kDistanceWidthRatio(r) r*kScreenWidth/kPictureW
+#define IPHONE6WH(x) (([UIScreen mainScreen].bounds.size.width/375.0)*(x))
+
+#define scanle(x) (((ScreenWidth > ScreenHeight) ?  ScreenHeight/375.0 : ScreenWidth/375.0)*(x))
+
+
+//
+#define kNavigationTitleFont 14
+#define kNavigationItemsNum 6
+#define kOriginY (ScreenHeight == 812.0 ? 44 : 20)
+#define kStatusHeight (ScreenHeight == 812.0 ? 44 : 0)
+
+///版本号
+#define VERSIONing    [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+
+/** 屏幕除去navigationBar，栏目高度，tabBar之后的高度*/
+#define kContentViewHeight kScreenHeight - LPPageVCSegmentHeight - 64 - 49
+
+#define kNavBarHeight (ScreenHeight == 812.0 ? 88 : 64)
+#define kTabBarHeight (ScreenHeight == 812.0 ? 83 : 49)
+
+/// 屏幕的宽度和高度
+//#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+//#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define CrossScreenWidth (ScreenWidth > ScreenHeight ?  ScreenHeight : ScreenWidth)
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define CrossScreenHeight (ScreenWidth > ScreenHeight ?  ScreenWidth : ScreenHeight)
+
+#define CrossScreenWidth_X (ScreenWidth > ScreenHeight ?  812.00 : 375.00)
+#define CrossScreenHeight_X (ScreenWidth > ScreenHeight ?  375.000 : 812.00)
+#define kiPhoneX ((kNavBarHeight == 88) ? YES : NO)
+
+#define PresentModelVC   [UIApplication sharedApplication].keyWindow.rootViewController
+
+#define huangUserId [PVUserModel shared].userId
+#define huangToken [PVUserModel shared].token
+#define BASEURL @""
+
+#define FontBlod @"Helvetica-Bold"
+
+
+//16:9
+#define BIGBITMAP   @"crossPlaceImage"
+//4;3
+#define CROSSMAPBITMAP   @"verticalPlaceImage"
+//3:4
+#define VERTICALMAPBITMAP   @"cross_4_3_PlaceImage"
+
+#define NetworkReachabilityStatus @"NetworkReachabilityStatus"
+
+#endif /* PrefixHeader_pch */
+#endif 
+
+
+#ifdef DEBUG
+# define PVLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define PVLog(...);
+#endif

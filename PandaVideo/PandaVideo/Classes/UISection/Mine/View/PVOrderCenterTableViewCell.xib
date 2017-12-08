@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="resuPVOrderCenterTableViewCell" rowHeight="91" id="KGk-i7-Jjw" customClass="PVOrderCenterTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U0w-aI-tDP">
+                        <rect key="frame" x="13" y="20.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="U0w-aI-tDP" secondAttribute="height" id="Bfr-J2-rxf"/>
+                            <constraint firstAttribute="width" constant="50" id="SAI-iw-77Y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdP-th-s1n">
+                        <rect key="frame" x="73" y="28.5" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="尊享频道全部付费影片免费观看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rBu-0y-dLN">
+                        <rect key="frame" x="73" y="49.5" width="172" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYX-yZ-6iv">
+                        <rect key="frame" x="293" y="28" width="56" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="FSz-aO-HPB"/>
+                            <constraint firstAttribute="width" constant="56" id="RAX-gJ-83V"/>
+                        </constraints>
+                        <state key="normal" title="登录">
+                            <color key="titleColor" red="0.16470588235294117" green="0.70588235294117641" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="loginOrContinueBtnClicked" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2Wa-O0-rmI"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cdP-th-s1n" firstAttribute="centerY" secondItem="U0w-aI-tDP" secondAttribute="centerY" constant="-8" id="DwK-EW-0D7"/>
+                    <constraint firstItem="U0w-aI-tDP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="13" id="L0K-GO-MK0"/>
+                    <constraint firstItem="U0w-aI-tDP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Y9w-6s-ZS3"/>
+                    <constraint firstItem="uYX-yZ-6iv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dBz-YY-Yua"/>
+                    <constraint firstItem="rBu-0y-dLN" firstAttribute="leading" secondItem="cdP-th-s1n" secondAttribute="leading" id="iWK-oI-owi"/>
+                    <constraint firstItem="cdP-th-s1n" firstAttribute="leading" secondItem="U0w-aI-tDP" secondAttribute="trailing" constant="10" id="r93-AI-Lqh"/>
+                    <constraint firstItem="rBu-0y-dLN" firstAttribute="top" secondItem="cdP-th-s1n" secondAttribute="bottom" constant="3" id="u40-tf-72l"/>
+                    <constraint firstAttribute="trailing" secondItem="uYX-yZ-6iv" secondAttribute="trailing" constant="13" id="wpu-yS-cdh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="U0w-aI-tDP" id="SHD-0o-DyM"/>
+                <outlet property="iconImageViewLeftConstraint" destination="L0K-GO-MK0" id="3jn-l5-6ha"/>
+                <outlet property="loginOrContinueBtn" destination="uYX-yZ-6iv" id="hcE-ez-1c1"/>
+                <outlet property="loginPrContinueBtnHeightConstraint" destination="RAX-gJ-83V" id="IJn-ie-Rxd"/>
+                <outlet property="subTitleLabel" destination="rBu-0y-dLN" id="D1V-jz-9Ub"/>
+                <outlet property="titleLabel" destination="cdP-th-s1n" id="7Dq-sQ-vfj"/>
+                <outlet property="titleLabelLeftConstraint" destination="r93-AI-Lqh" id="8Cb-e1-iu6"/>
+            </connections>
+            <point key="canvasLocation" x="62" y="-119"/>
+        </tableViewCell>
+    </objects>
+</document>

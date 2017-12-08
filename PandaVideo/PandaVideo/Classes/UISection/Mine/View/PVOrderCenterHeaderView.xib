@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PVOrderCenterHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_icon_avatar" translatesAutoresizingMaskIntoConstraints="NO" id="v8w-Eg-aHY">
+                    <rect key="frame" x="13" y="14.5" width="50" height="50"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="未登陆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhZ-VE-UZJ">
+                    <rect key="frame" x="72" y="24" width="46" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Hd-kc-vqn">
+                    <rect key="frame" x="312" y="23" width="50" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" red="0.1647058824" green="0.70588235290000001" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="loginButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="F7L-ua-yyG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请登录后购买VIP会员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVu-gM-G9g">
+                    <rect key="frame" x="72" y="48" width="117" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AVu-gM-G9g" firstAttribute="leading" secondItem="NhZ-VE-UZJ" secondAttribute="leading" id="1hZ-0p-ugH"/>
+                <constraint firstItem="v8w-Eg-aHY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="trailing" multiplier="13:375" id="41S-ar-Jii"/>
+                <constraint firstItem="v8w-Eg-aHY" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="50:375" id="ISI-la-8KL"/>
+                <constraint firstItem="6Hd-kc-vqn" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="JnN-cA-pKS"/>
+                <constraint firstItem="NhZ-VE-UZJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="bottom" multiplier="24:79" id="LCg-Lr-aro"/>
+                <constraint firstItem="NhZ-VE-UZJ" firstAttribute="leading" secondItem="v8w-Eg-aHY" secondAttribute="trailing" constant="9" id="NlH-OI-tLe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6Hd-kc-vqn" secondAttribute="trailing" constant="13" id="RXS-En-T9o"/>
+                <constraint firstItem="v8w-Eg-aHY" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="YEz-Lb-ZKx"/>
+                <constraint firstItem="6Hd-kc-vqn" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="50:375" id="dqb-4t-6Sw"/>
+                <constraint firstItem="v8w-Eg-aHY" firstAttribute="width" secondItem="v8w-Eg-aHY" secondAttribute="height" id="pFk-bi-VI4"/>
+                <constraint firstItem="AVu-gM-G9g" firstAttribute="top" secondItem="NhZ-VE-UZJ" secondAttribute="bottom" constant="6" id="rUf-0U-eSo"/>
+                <constraint firstItem="6Hd-kc-vqn" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="33:79" id="tOy-Vo-yVS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="activityLabel" destination="AVu-gM-G9g" id="mFc-ig-Qxj"/>
+                <outlet property="headerView" destination="v8w-Eg-aHY" id="5wV-10-ftd"/>
+                <outlet property="loginButton" destination="6Hd-kc-vqn" id="OqD-0v-feC"/>
+                <outlet property="nameLabel" destination="NhZ-VE-UZJ" id="edv-Vo-XQe"/>
+            </connections>
+            <point key="canvasLocation" x="-798" y="-242"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_icon_avatar" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13770" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13770"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PVMyVideoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="76.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywc-Qe-ZTM">
+                        <rect key="frame" x="0.0" y="11.5" width="33" height="54"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="33" id="TKL-qT-wHw"/>
+                            <constraint firstAttribute="height" constant="54" id="k7x-Te-INo"/>
+                        </constraints>
+                        <state key="normal" image="mine_control_select_normal"/>
+                        <state key="selected" image="mine_control_select_selected"/>
+                        <connections>
+                            <action selector="deleteBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KJq-3x-gtl"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wcs-za-m1m">
+                        <rect key="frame" x="33" y="15.5" width="109" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="109" id="0uY-Yl-jUG"/>
+                            <constraint firstAttribute="width" secondItem="wcs-za-m1m" secondAttribute="height" multiplier="109:61" id="gOb-Xc-3Xe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hTi-10-BOQ">
+                        <rect key="frame" x="152" y="15" width="204" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_history_icon_phone" translatesAutoresizingMaskIntoConstraints="NO" id="L3l-Zo-OC7">
+                        <rect key="frame" x="152" y="52" width="10" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="Yae-Kv-sjm"/>
+                            <constraint firstAttribute="height" constant="15" id="lFK-Ve-ISh"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVE-B0-7ky">
+                        <rect key="frame" x="363" y="60" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39U-36-2mO">
+                        <rect key="frame" x="152" y="75" width="211" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="JmQ-3N-Jmc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHW-2S-YT3">
+                        <rect key="frame" x="168" y="59.5" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtU-Kx-xi8">
+                        <rect key="frame" x="115.5" y="64" width="26.5" height="12"/>
+                        <color key="backgroundColor" red="0.0039215686269999999" green="0.0039215686269999999" blue="0.0039215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="wcs-za-m1m" secondAttribute="bottom" id="AUg-ni-hn8"/>
+                    <constraint firstItem="hTi-10-BOQ" firstAttribute="leading" secondItem="wcs-za-m1m" secondAttribute="trailing" constant="10" id="BVS-i3-1Ya"/>
+                    <constraint firstItem="wcs-za-m1m" firstAttribute="leading" secondItem="ywc-Qe-ZTM" secondAttribute="trailing" id="HyX-d1-Ro3"/>
+                    <constraint firstAttribute="trailing" secondItem="hTi-10-BOQ" secondAttribute="trailing" multiplier="375:356" id="I7n-Pp-Sks"/>
+                    <constraint firstItem="eVE-B0-7ky" firstAttribute="trailing" secondItem="39U-36-2mO" secondAttribute="trailing" id="JzP-1M-APC"/>
+                    <constraint firstAttribute="trailing" secondItem="39U-36-2mO" secondAttribute="trailing" constant="12" id="RmF-KA-bVt"/>
+                    <constraint firstItem="ywc-Qe-ZTM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="STR-JT-LMp"/>
+                    <constraint firstItem="hTi-10-BOQ" firstAttribute="top" secondItem="wcs-za-m1m" secondAttribute="top" id="YZe-bj-IJA"/>
+                    <constraint firstItem="39U-36-2mO" firstAttribute="leading" secondItem="wcs-za-m1m" secondAttribute="trailing" constant="10" id="ZDw-fD-1eE"/>
+                    <constraint firstItem="NHW-2S-YT3" firstAttribute="leading" secondItem="L3l-Zo-OC7" secondAttribute="trailing" constant="6" id="aDg-th-EE8"/>
+                    <constraint firstAttribute="bottom" secondItem="39U-36-2mO" secondAttribute="bottom" id="cvc-zM-iB7"/>
+                    <constraint firstItem="FtU-Kx-xi8" firstAttribute="bottom" secondItem="wcs-za-m1m" secondAttribute="bottom" id="nRx-0t-t1X"/>
+                    <constraint firstItem="L3l-Zo-OC7" firstAttribute="leading" secondItem="hTi-10-BOQ" secondAttribute="leading" id="oA3-Hy-3jp"/>
+                    <constraint firstItem="39U-36-2mO" firstAttribute="top" secondItem="L3l-Zo-OC7" secondAttribute="bottom" constant="8" id="oMv-jB-ZB6"/>
+                    <constraint firstItem="ywc-Qe-ZTM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="oaS-Yb-sjd"/>
+                    <constraint firstItem="FtU-Kx-xi8" firstAttribute="trailing" secondItem="wcs-za-m1m" secondAttribute="trailing" id="osz-Bs-pcM"/>
+                    <constraint firstItem="NHW-2S-YT3" firstAttribute="centerY" secondItem="L3l-Zo-OC7" secondAttribute="centerY" id="qzb-Do-It2"/>
+                    <constraint firstItem="eVE-B0-7ky" firstAttribute="centerY" secondItem="NHW-2S-YT3" secondAttribute="centerY" id="v1I-h8-FZJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="ywc-Qe-ZTM" firstAttribute="centerY" secondItem="aW0-zy-SZf" secondAttribute="centerY" id="zGk-mA-HnJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="deleteBtn" destination="ywc-Qe-ZTM" id="hDu-sm-0yD"/>
+                <outlet property="stateImageView" destination="L3l-Zo-OC7" id="4JE-F8-sQg"/>
+                <outlet property="stateLabel" destination="NHW-2S-YT3" id="WPV-Yx-u7Q"/>
+                <outlet property="videoDurationlabel" destination="FtU-Kx-xi8" id="OIm-Fs-fKt"/>
+                <outlet property="videoImageLeftConstraint" destination="HyX-d1-Ro3" id="amF-5I-O5X"/>
+                <outlet property="videoImageView" destination="wcs-za-m1m" id="HGj-NN-Ehc"/>
+                <outlet property="videoTimeLabel" destination="eVE-B0-7ky" id="Rh6-H6-QF1"/>
+                <outlet property="videoTitle" destination="hTi-10-BOQ" id="FGx-7e-aN3"/>
+            </connections>
+            <point key="canvasLocation" x="-592" y="53"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mine_control_select_normal" width="17" height="17"/>
+        <image name="mine_control_select_selected" width="17" height="17"/>
+        <image name="mine_history_icon_phone" width="8" height="13"/>
+    </resources>
+</document>
